@@ -4,29 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+    <link rel="stylesheet" href="output.css" />
   </head>
-  <body>
-    <div><input type="text" /></div>
-    <div class="calc_buttons">
-      <button class="AC">AC</button>
-      <button class="?">?</button>
-      <button class="/">/</button>
-      <button class="BS">BS</button>
-      <button class="*">*</button>
-      <button class="-">-</button>
-      <button class="+">+</button>
-      <button class="=">=</button>
-      <button class="7">7</button>
-      <button class="8">8</button>
-      <button class="9">9</button>
-      <button class="4">4</button>
-      <button class="5">5</button>
-      <button class="6">6</button>
-      <button class="1">1</button>
-      <button class="2">2</button>
-      <button class="3">3</button>
-      <button class="0">0</button>
-      <button class=".">.</button>
+  <body
+    class="m-0 p-0 bg-black flex justify-center items-center min-h-screen font-sans"
+  >
+    <div class="w-90">
+      <input
+        type="text"
+        value="0"
+        readonly
+        class="w-full bg-transparent border-none text-white text-6xl text-right px-5 pt-5 pb-2.5 box-border"
+      />
+      <div class="grid grid-cols-4 gap-3 p-5">
+        <button class="btn-function">AC</button>
+        <button class="btn-function">+/-</button>
+        <button class="btn-function">%</button>
+        <button class="btn-operator">÷</button>
+
+        <button class="btn-num">7</button>
+        <button class="btn-num">8</button>
+        <button class="btn-num">9</button>
+        <button class="btn-operator">×</button>
+
+        <button class="btn-num">4</button>
+        <button class="btn-num">5</button>
+        <button class="btn-num">6</button>
+        <button class="btn-operator">−</button>
+
+        <button class="btn-num">1</button>
+        <button class="btn-num">2</button>
+        <button class="btn-num">3</button>
+        <button class="btn-operator">+</button>
+
+        <button class="btn-zero">0</button>
+        <button class="btn-num">.</button>
+        <button class="btn-operator">=</button>
+      </div>
     </div>
   </body>
 </html>

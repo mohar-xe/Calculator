@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ios-gray: #333333;
+  --color-ios-orange: #ff9500;
+  --color-ios-light: #a5a5a5;
+}
+
+@layer components {
+  .btn-num {
+    @apply w-[70px] h-[70px] rounded-full border-none text-3xl font-light cursor-pointer active:opacity-50 bg-ios-gray text-white;
+  }
+
+  .btn-operator {
+    @apply w-[70px] h-[70px] rounded-full border-none text-3xl font-light cursor-pointer active:opacity-50 bg-ios-orange text-white;
+  }
+
+  .btn-function {
+    @apply w-[70px] h-[70px] rounded-full border-none text-3xl font-light cursor-pointer active:opacity-50 bg-ios-light text-black;
+  }
+
+  .btn-zero {
+    @apply h-[70px] rounded-[35px] border-none text-3xl font-light cursor-pointer active:opacity-50 bg-ios-gray text-white col-span-2;
+  }
+}
